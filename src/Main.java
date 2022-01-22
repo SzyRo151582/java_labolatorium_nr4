@@ -27,6 +27,38 @@ public class Main {
         c) wypisać metody toString() wszystkich objektów,
         */
 
+        Student student1 = new Student();
+        student1.setImie("Andrzej");
+        student1.setNazwisko("Antagonista");
+        student1.setWaga(65);
+        student1.setWzrost(187);
+        student1.setSemestr(4);
+        System.out.println(student1.toString());
+
+        Student student2 = new Student();
+        student2.setImie("Barbara");
+        student2.setNazwisko("Bachor");
+        student2.setWaga(59);
+        student2.setWzrost(173);
+        student2.setSemestr(3);
+        System.out.println(student1.toString());
+
+        Pracownik pracownik1 = new Pracownik();
+        pracownik1.setImie("Cecylia");
+        pracownik1.setNazwisko("Cudna");
+        pracownik1.setWaga(68);
+        pracownik1.setWzrost(168);
+        pracownik1.setStanowisko("Wykladowca");
+        System.out.println(pracownik1.toString());
+
+        Pracownik pracownik2 = new Pracownik();
+        pracownik2.setImie("Damian");
+        pracownik2.setNazwisko("Doigralski");
+        pracownik2.setWaga(77);
+        pracownik2.setWzrost(171);
+        pracownik2.setStanowisko("Ochroniaz");
+        System.out.println(pracownik2.toString());
+
         /* zad.4* - Dla chętnych (bez dodatkowych punktów),
         a) stworzyć klasę Kierownik która będzie implementować interfejs PracownikI,
         b) zaimplementować wszystkie metody, i stworzyć pola
