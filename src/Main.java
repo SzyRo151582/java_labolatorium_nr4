@@ -1,4 +1,10 @@
 public class Main {
+
+    public static void metoda1(String narzad, String organ)
+    {
+
+    }
+
     public static void main(String[] args) {
 
         /* zad.1
@@ -30,5 +36,17 @@ public class Main {
         d) sprawdzić czy idzie wywołać z obu instancji objektu (deklaracja z interfejsu i z klasy)
         metodę której nie ma zadeklarowane w interfejsie Budynek, ale jest dopisana w klassie Dom,
         */
+
+        Dom dom1 = new Dom();
+        dom1.liczbaOkien(12);
+        dom1.liczbaMieszkancow(5);
+        dom1.kolorDomu(Budynek.KolorEnum.ZOLTY);
+        dom1.podsumowanie();
+
+        Budynek dom2 = new Dom();
+        dom2.liczbaOkien(9);
+        dom2.liczbaMieszkancow(3);
+        dom2.kolorDomu(Budynek.KolorEnum.NIEBIESKI);
+        //dom2.podsumowanie(); nie da sie wywołać tej instancji
     }
 }
