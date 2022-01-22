@@ -41,12 +41,13 @@ public class Main {
         dom1.liczbaOkien(12);
         dom1.liczbaMieszkancow(5);
         dom1.kolorDomu(Budynek.KolorEnum.ZOLTY);
-        dom1.podsumowanie();
+        System.out.println(dom1.toString());
 
         Budynek dom2 = new Dom();
         dom2.liczbaOkien(9);
         dom2.liczbaMieszkancow(3);
         dom2.kolorDomu(Budynek.KolorEnum.NIEBIESKI);
-        //dom2.podsumowanie(); nie da sie wywołać tej instancji
+        System.out.println(dom2.toString());
+
     }
 }

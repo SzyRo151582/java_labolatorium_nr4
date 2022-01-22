@@ -16,4 +16,6 @@ public interface Budynek {
     {
         CZERWONY, ZOLTY, ZIELONY, NIEBIESKI, CZARNY, BIALY, POMARANCZOWY;
     }
+
+    String wlasciciel(String imie, String nazwisko);
 }
