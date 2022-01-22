@@ -38,15 +38,29 @@ public class Main {
         */
 
         Dom dom1 = new Dom();
-        dom1.liczbaOkien(12);
-        dom1.liczbaMieszkancow(5);
-        dom1.kolorDomu(Budynek.KolorEnum.ZOLTY);
+        dom1.setValue(12);
+        dom1.setKolor(Budynek.KolorEnum.ZOLTY);
+        dom1.setCena(250000);
+        dom1.setMiejscowosc("Jasien");
+        dom1.setKodPocztowy("67-332");
+        dom1.setNrDomu(12);
+        dom1.setNrLokalu(null);
+        dom1.setPowBudynku(180);
+        dom1.setPowierzchnia(700);
+        dom1.setPowParkingu(50);
+        dom1.setPowPodworka(400);
+        dom1.setUlica("Nagietkowa");
+        dom1.setImie("Filip");
+        dom1.setNazwisko("Falinski");
         System.out.println(dom1.toString());
 
         Budynek dom2 = new Dom();
         dom2.liczbaOkien(9);
         dom2.liczbaMieszkancow(3);
         dom2.kolorDomu(Budynek.KolorEnum.NIEBIESKI);
+        dom2.adresBudynku("Kowale", "Lubiezna", 12, "B", "62-296");
+        dom2.powierzchnia(2350, 0, 35);
+        dom2.wlasciciel("Emilia", "Euforia");
         System.out.println(dom2.toString());
 
     }
